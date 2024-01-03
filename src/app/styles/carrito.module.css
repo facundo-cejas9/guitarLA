@@ -1,0 +1,104 @@
+.contenido {
+    display: grid;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-left: 20px;
+   
+}
+
+@media (min-width: 768px) {
+    .contenido {
+        grid-template-columns: 3fr 2fr;
+        margin-left: 0px;
+    }
+}
+
+.carrito {
+    padding: 1rem 0;
+
+}
+
+.producto {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 2rem;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #cfcfcf;
+    position: relative;
+}
+
+.producto:last-of-type {
+    border: none;
+}
+
+.producto p {
+    margin: 0 0 1rem 0;
+    font-size: 2.4rem;
+
+}
+
+.producto span {
+    font-weight: 900;
+    font-size: 2.3rem;
+}
+
+.precio {
+    font-weight: 900;
+    color: var(--primary);
+    font-size: 3rem;
+    
+}
+
+.nombre {
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.select {
+    border: 1px solid var(--black);
+    border-radius: .5rem;
+    padding: 1rem;
+    width: 50%;
+    text-align: center;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+.resumen {
+    background-color: #F9FAFB;
+    padding: 3rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.eliminar {
+    all: unset ;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 3rem;
+    background-color: rgb(158, 26, 2);
+    color: white;
+    padding: 1.3rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+
+.total {
+    font-size: 2.6rem;
+    font-weight: bold;
+    text-align: center;
+}
